@@ -9,11 +9,11 @@ class Person:
     @classmethod
     def Taiwanese(cls):
         return cls("black","black")
-    def print(self):
+    def intro(self):
         print("My eye is {} and my hair is {}".format(self.eye, self.hair))
 
 
 American = Person.American()
-American.print()
+American.intro()
 Taiwanese = Person.Taiwanese()
-Taiwanese.print()
+Taiwanese.intro()
