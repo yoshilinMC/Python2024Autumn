@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <form action="/fromprocess.php" method="post">
+        <p> Name: <input type="text" maxlength="12" minlength="3" size="12" placeholder="請在此輸入"></p>
+        <p> Email: <input type="password" maxlength="12" minlength="3" size="12" placeholder="請在此輸入"></p>
+        <p> Comments: </p>
+        <textarea name="mytext" rows="6" cols="40" required>你的留言</textarea>
+        <p> Birthday or time : </p>
+        <input type="date" value="2020-4-20" min="2020-04-01" max="2022-04-30" step="5" >
+        <input type="time" value="06:00" min="00:00" max="23:59" step="5" > 
+        <p></p>
+        請問你最有興趣學習的技術:
+        <p><input type="radio" name="tech" value="HTML"> HTML </p>
+        <p><input type="radio" name="tech" value="CSS"> CSS </p>
+        <p><input type="radio" name="tech" value="JavaScript"> JavaScript </p>
+        <p></p>
+        <input type="submit" value="Send Request" >
+        <input type="reset" value="reset">
+    </form>
+</html>

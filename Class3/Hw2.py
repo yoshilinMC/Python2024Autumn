@@ -23,3 +23,23 @@ print(basketball.play())
 
 baseball = Sport("baseball", 4)
 print(baseball.play())
+
+import abc
+
+class Sport(metaclass=abc.ABCMeta):
+    @abc.abstractclassmethod
+    def play(self):
+        pass
+
+class basketball(Sport):
+    def play(self):
+        print("Playing basketball takes 2 hours")
+
+class baseball(Sport):
+    def play(self):
+        print("Playing baseball takes 4 hours")
+
+Basketball = basketball()
+Basketball.play()
+Baseball = baseball()
+Baseball.play()
