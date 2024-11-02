@@ -40,23 +40,23 @@ from flask import render_template, request
 #     return "Hello Flask"
 # app.run()
 
-# app = Flask(__name__)
+app = Flask(__name__)
 
-# @app.route("/fruit")
-# def fruit():
-#     return "<form method='post' action='/submit'> <input type='text' name='username'/> <button type='submit'> Submit</button></form> "
-# @app.route("/submit", methods=["POST"])
-# def submit():
-#     username = request.values["username"]
-#     return "I like " + username
-# app.run()
+@app.route("/fruit")
+def fruit():
+    return "<form method='post' action='/submit'> <input type='text' name='username'/> <button type='submit'> Submit</button></form> "
+@app.route("/submit", methods=["POST"])
+def submit():
+    username = request.values["username"]
+    return "I like " + username
+app.run()
 
-def a(func):
-    print("makeup...")
-    return func
+# def a(func):
+#     print("makeup...")
+#     return func
 
-def b():
-    print("go!!!")
+# def b():
+#     print("go!!!")
 
-b = a(b)
-b()
+# b = a(b)
+# b()
